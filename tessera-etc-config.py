@@ -1,0 +1,7 @@
+import os
+
+from tessera.config import *
+
+SQLALCHEMY_DATABASE_URI = os.getenv('SQLALCHEMY_DATABASE_URI', SQLALCHEMY_DATABASE_URI)
+GRAPHITE_URL = os.getenv('GRAPHITE_URL', GRAPHITE_URL)
+SECRET_KEY = os.getenv('SECRET_KEY', SECRET_KEY)
